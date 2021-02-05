@@ -63,4 +63,23 @@ public class Util {
 			System.out.print(arr[i] + (i != len - 1 ? " " : "\n"));
 		}
 	}
+
+	public static int[] reverseArr(int[] arr) {
+		if (arr == null) {
+			return null;
+		}
+
+		if (arr.length <= 1) {
+			return arr;
+		}
+
+		int len = arr.length;
+		int[] reversedArr = new int[len];
+
+		int j = 0;
+		for (int i = len - 1; i >= 0; --i) {
+			reversedArr[j++] = arr[i];
+		}
+		return reversedArr;
+	}
 }
