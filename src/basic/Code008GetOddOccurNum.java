@@ -84,7 +84,6 @@ public class Code008GetOddOccurNum {
 
 		int[] arr = new int[odd + (numType - 1) * even];
 		int i = 0;
-		int len = arr.length;
 
 		Set<Integer> set = new HashSet<>();
 		set.add(target);
